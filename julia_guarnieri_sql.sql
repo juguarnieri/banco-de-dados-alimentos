@@ -11,7 +11,7 @@ CREATE TABLE alimentos (
     calorias INT
 );
 
-INSERT INTO alimentos (nome, tipo, regiao, natural_processado, temperatura, metodo_preparo, preco, calorias) VALUES
+INSERT INTO alimentos (nome, tipo, origem, natural_processado, temperatura, metodo_preparo, preco, calorias) VALUES
 ('Maçã', 'fruta, 'global', 'natural', 'ambiente', 'in natura', 3.00, 52),
 ('Banana', 'fruta', 'global', 'natural', 'ambiente', 'in natura', 2.00, 89),
 ('Laranja', 'fruta', 'global', 'natural', 'ambiente', 'in natura', 2.00, 47),
