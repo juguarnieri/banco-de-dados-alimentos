@@ -12,7 +12,7 @@ CREATE TABLE alimentos (
 );
 
 INSERT INTO alimentos (nome, tipo, origem, natural_processado, temperatura, metodo_preparo, preco, calorias) VALUES
-('Maca', 'fruta, 'global', 'natural', 'ambiente', 'in natura', 3.00, 52),
+('Maca', 'fruta', 'global', 'natural', 'ambiente', 'in natura', 3.00, 52),
 ('Banana', 'fruta', 'global', 'natural', 'ambiente', 'in natura', 2.00, 89),
 ('Laranja', 'fruta', 'global', 'natural', 'ambiente', 'in natura', 2.00, 47),
 ('Abacaxi', 'fruta', 'tropical', 'natural', 'ambiente', 'in natura', 3.50, 50),
