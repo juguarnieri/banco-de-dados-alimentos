@@ -112,3 +112,38 @@ INSERT INTO alimentos (nome, tipo, origem, natural_processado, temperatura, meto
 ('Torta Banoffee', 'doce', 'global', 'processado', 'frio', 'montado', 7.50, 400),
 ('Crepe Suzette', 'doce', 'Franca', 'processado', 'quente', 'cozido', 5.00, 220),
 ('Bolo Prestigio', 'doce', 'Brasil', 'processado', 'ambiente', 'assado', 4.50, 370);
+
+
+
+DELETE FROM alimentos WHERE nome = 'Cereja' AND tipo = 'fruta'; 
+DELETE FROM alimentos WHERE preco IN (3.80, 3.38) AND tipo = 'fruta';
+DELETE FROM alimentos WHERE id = 82;
+DELETE FROM alimentos WHERE tipo = 'fruta' AND id IN (1, 2, 3); 
+DELETE FROM alimentos WHERE id = (SELECT MAX(id) FROM alimentos WHERE tipo = 'fruta');
+DELETE FROM alimentos WHERE id = (SELECT MIN(id) FROM alimentos WHERE tipo = 'fruta');
+DELETE FROM alimentos WHERE tipo = 'fruta' AND LENGTH(nome) < 5;
+DELETE FROM alimentos WHERE id BETWEEN 15 AND 25;
+DELETE FROM alimentos WHERE id = 97;  
+DELETE FROM alimentos WHERE tipo = 'fruta' AND nome = 'Jambo'; 
+DELETE FROM alimentos WHERE nome = 'Tamarindo';  
+DELETE FROM alimentos WHERE nome = 'Mangosta';
+DELETE FROM alimentos WHERE nome LIKE 'T%' AND tipo = 'doce'; 
+DELETE FROM alimentos WHERE tipo = 'fruta' AND id = 26;  
+DELETE FROM alimentos WHERE nome = 'Melao';  
+DELETE FROM alimentos WHERE id = 62;
+DELETE FROM alimentos WHERE natural_processado = 'natural' AND nome = 'Araca';
+DELETE FROM alimentos WHERE natural_processado = 'processado' AND nome = 'Brownie';
+DELETE FROM alimentos WHERE id = 46;
+DELETE FROM alimentos WHERE nome = 'Pao de Mel';
+DELETE FROM alimentos WHERE nome =  'Torta de Morango';
+DELETE FROM alimentos WHERE calorias = 80 AND tipo = 'fruta';
+DELETE FROM alimentos WHERE origem = 'Australia' AND tipo = 'fruta';
+DELETE FROM alimentos WHERE preco =  4.74  AND tipo = 'doce';
+DELETE FROM alimentos WHERE calorias > 230 AND tipo = 'doce';
+DELETE FROM alimentos WHERE preco > 3.00 AND tipo = 'doce';
+DELETE FROM alimentos WHERE calorias = 178 AND tipo = 'salgado';
+DELETE FROM alimentos WHERE metodo_preparo = 'assado';
+DELETE FROM alimentos WHERE temperatura = 'frio';  
+DELETE FROM alimentos WHERE origem = 'tropical';
+
+
