@@ -2,7 +2,7 @@ CREATE DATABASE alimentosdb;
 CREATE TABLE alimentos (
     id SERIAL PRIMARY KEY,
     nome TEXT,
-    tipo VARCHAR(10),
+    tipo VARCHAR(20),
     origem VARCHAR(100),
     natural_processado VARCHAR(15),
     temperatura VARCHAR(20),
