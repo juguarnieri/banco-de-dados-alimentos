@@ -114,7 +114,6 @@ INSERT INTO alimentos (nome, tipo, origem, natural_processado, temperatura, meto
 ('Bolo Prestigio', 'doce', 'Brasil', 'processado', 'ambiente', 'assado', 4.50, 370);
 
 
-
 DELETE FROM alimentos WHERE nome = 'Cereja'; 
 DELETE FROM alimentos WHERE preco IN (3.80, 3.38) AND tipo = 'fruta';
 DELETE FROM alimentos WHERE id = 82;
@@ -145,6 +144,3 @@ DELETE FROM alimentos WHERE calorias = 178 AND tipo = 'salgado';
 DELETE FROM alimentos WHERE metodo_preparo = 'assado';
 DELETE FROM alimentos WHERE temperatura = 'frio';  
 DELETE FROM alimentos WHERE origem = 'tropical';
-
-
-
