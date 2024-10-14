@@ -1,4 +1,6 @@
+/* CRIAÇÃO BANCO DE DADOS*/
 CREATE DATABASE alimentosdb;
+/* CRIAÇÃO TABELA*/
 CREATE TABLE alimentos (
     id SERIAL PRIMARY KEY,
     nome TEXT,
@@ -6,11 +8,12 @@ CREATE TABLE alimentos (
     origem VARCHAR(100),
     natural_processado VARCHAR(15),
     temperatura VARCHAR(20),
-    metodo_preparo VARCHAR(100),
+    metodo_preparo TEXT,
     preco DECIMAL(5,2),
     calorias INT
 );
 
+/* 100 INSERTS - FRUTA E DOCE*/
 INSERT INTO alimentos (nome, tipo, origem, natural_processado, temperatura, metodo_preparo, preco, calorias) VALUES
 ('Maca', 'fruta', 'global', 'natural', 'ambiente', 'in natura', 3.00, 52),
 ('Banana', 'fruta', 'global', 'natural', 'ambiente', 'in natura', 2.00, 89),
@@ -114,7 +117,7 @@ INSERT INTO alimentos (nome, tipo, origem, natural_processado, temperatura, meto
 ('Bolo Prestigio', 'doce', 'Brasil', 'processado', 'ambiente', 'assado', 4.50, 370);
 
 
-
+/* 30 DELETES */
 DELETE FROM alimentos WHERE nome = 'Cereja'; 
 DELETE FROM alimentos WHERE preco IN (3.80, 3.38) AND tipo = 'fruta';
 DELETE FROM alimentos WHERE id = 82;
@@ -145,6 +148,4 @@ DELETE FROM alimentos WHERE calorias = 178 AND tipo = 'salgado';
 DELETE FROM alimentos WHERE metodo_preparo = 'assado';
 DELETE FROM alimentos WHERE temperatura = 'frio';  
 DELETE FROM alimentos WHERE origem = 'tropical';
-
-
 

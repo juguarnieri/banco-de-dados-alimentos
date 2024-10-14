@@ -131,3 +131,5 @@ DELETE FROM alimentos WHERE origem = 'global' AND tipo = 'fruta seca';
 DELETE FROM alimentos WHERE metodo_preparo = 'cru' AND tipo != 'vegetal';
 DELETE FROM alimentos WHERE nome LIKE '%cheese%';
 DELETE FROM alimentos WHERE preco BETWEEN 10.00 AND 20.00;
+DELETE FROM alimentos WHERE temperatura = 'quente';
+
