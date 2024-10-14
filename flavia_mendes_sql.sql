@@ -99,3 +99,35 @@ INSERT INTO alimentos (nome, tipo, origem, natural_processado, temperatura, meto
 ('Caviar', 'salgado', 'global', 'natural', 'frio', 'cozido', 200.00, 250),
 ('Misto quente', 'salgado', 'global', 'natural', 'quente', 'tostado', 15.00, 350),
 ('Grão de bico', 'leguminosa', 'Oriente medio', 'natural', 'quente', 'cozido', 9.00, 164);
+
+
+DELETE FROM alimentos WHERE nome = 'Lasanha';
+DELETE FROM alimentos WHERE nome = 'Sopa de legumes';
+DELETE FROM alimentos WHERE temperatura = 'quente';
+DELETE FROM alimentos WHERE origem = 'Oriente medio';
+DELETE FROM alimentos WHERE nome = 'Espinafre';
+DELETE FROM alimentos WHERE calorias < 100 AND tipo = 'salgado';
+DELETE FROM alimentos WHERE tipo = 'vegetal';
+DELETE FROM alimentos WHERE natural_processado = 'processado';
+DELETE FROM alimentos WHERE metodo_preparo = 'cozido';
+DELETE FROM alimentos WHERE preco > 50.00;
+DELETE FROM alimentos WHERE nome LIKE '%Pao%';
+DELETE FROM alimentos WHERE tipo = 'embutido' AND origem != 'Brasil';
+DELETE FROM alimentos WHERE calorias BETWEEN 150 AND 300;
+DELETE FROM alimentos WHERE nome = 'Taco';
+DELETE FROM alimentos WHERE tipo = 'acompanhamento';
+DELETE FROM alimentos WHERE preco <= 5.00;
+DELETE FROM alimentos WHERE DELETE FROM alimentos WHERE nome IN ('Camarão na moranga', 'Feijoada');
+DELETE FROM alimentos WHERE metodo_preparo = 'assado' AND temperatura = 'quente';
+DELETE FROM alimentos WHERE tipo = 'fruta' AND calorias < 100;
+DELETE FROM alimentos WHERE origem = 'Italia' AND tipo = 'carboidrato';
+DELETE FROM alimentos WHERE natural_processado = 'natural' AND calorias > 400;
+DELETE FROM alimentos WHERE nome LIKE 'Bolo%';
+DELETE FROM alimentos WHERE nome = 'Cachorro quente';
+DELETE FROM alimentos WHERE temperatura = 'frio' AND tipo = 'salgado';
+DELETE FROM alimentos WHERE nome IN ('Quibe', 'Acaraje');
+DELETE FROM alimentos WHERE tipo = 'salgado' AND calorias < 50;
+DELETE FROM alimentos WHERE origem = 'global' AND tipo = 'fruta seca';
+DELETE FROM alimentos WHERE metodo_preparo = 'cru' AND tipo != 'vegetal';
+DELETE FROM alimentos WHERE nome LIKE '%cheese%';
+DELETE FROM alimentos WHERE preco BETWEEN 10.00 AND 20.00;
