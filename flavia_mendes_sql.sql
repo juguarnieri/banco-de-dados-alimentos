@@ -103,6 +103,7 @@ INSERT INTO alimentos (nome, tipo, origem, natural_processado, temperatura, meto
 
 DELETE FROM alimentos WHERE nome = 'Lasanha';
 DELETE FROM alimentos WHERE nome = 'Sopa de legumes';
+DELETE FROM alimentos WHERE temperatura = 'quente';
 DELETE FROM alimentos WHERE origem = 'Oriente medio';
 DELETE FROM alimentos WHERE nome = 'Espinafre';
 DELETE FROM alimentos WHERE calorias < 100 AND tipo = 'salgado';
