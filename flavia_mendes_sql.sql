@@ -103,7 +103,6 @@ INSERT INTO alimentos (nome, tipo, origem, natural_processado, temperatura, meto
 
 DELETE FROM alimentos WHERE nome = 'Lasanha';
 DELETE FROM alimentos WHERE nome = 'Sopa de legumes';
-DELETE FROM alimentos WHERE temperatura = 'quente';
 DELETE FROM alimentos WHERE origem = 'Oriente medio';
 DELETE FROM alimentos WHERE nome = 'Espinafre';
 DELETE FROM alimentos WHERE calorias < 100 AND tipo = 'salgado';
@@ -117,7 +116,7 @@ DELETE FROM alimentos WHERE calorias BETWEEN 150 AND 300;
 DELETE FROM alimentos WHERE nome = 'Taco';
 DELETE FROM alimentos WHERE tipo = 'acompanhamento';
 DELETE FROM alimentos WHERE preco <= 5.00;
-DELETE FROM alimentos WHERE DELETE FROM alimentos WHERE nome IN ('Camarão na moranga', 'Feijoada');
+DELETE FROM alimentos WHERE nome IN ('Camarão na moranga', 'Feijoada');
 DELETE FROM alimentos WHERE metodo_preparo = 'assado' AND temperatura = 'quente';
 DELETE FROM alimentos WHERE tipo = 'fruta' AND calorias < 100;
 DELETE FROM alimentos WHERE origem = 'Italia' AND tipo = 'carboidrato';
