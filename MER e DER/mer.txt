@@ -1,0 +1,10 @@
+   Entidades = Alimento :
+   • Id = atributo
+   • Nome = atributo
+   • Tipo = atributo
+   • Origem = atributo
+   • Natural_processado = atributo
+   • Temperatura = atributo
+   • Metodo_preparo = atributo
+   • Preco = atributo
+   • Calorias = atributo
